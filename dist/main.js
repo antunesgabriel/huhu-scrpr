@@ -1,0 +1,1 @@
+"use strict";var scrapperConverter=void 0;scrapperConverter=function(e,r){var c=(e=e.replace(/\n/g,"")).indexOf(r),i=(e=e.slice(c)).slice(r.length).indexOf("##")+r.length;(e=(e=e.slice(0,i)).split("*")).shift();var n="";return e.forEach(function(e){e=e.trim();var r=/\[(.*?)\]/.exec(e)[1],c=/\((.*?)\)/.exec(e)[1];n+='<a href="'+c+'">'+r+"</a>"}),n};

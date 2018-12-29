@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Scrapper de teste</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:400,500,700">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div>
+    <h2>Dados para o scrapper</h2>
+    <input id="link" type="url" placeholder="Link bruto">
+    <input id="secao" type="text" placeholder="Seção">
+    <br>
+    <button id="vamos">Vamos lá</button>
+  </div>
+  
+
+  <div id="resultado"></div>
+  
+  <script src="../dist/main.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script>
+    const vamos = document.querySelector("#vamos");
+    const input = document.querySelector("#link");
+    const secao = document.querySelector("#secao");
+
+    const resultado = document.querySelector("#resultado");
+
+    vamos.addEventListener("click", () => {
+      if(input.value){
+        axios.get(input.value)
+        .then(response => {
+          resultado.innerHTML = '<h2>Links da seção "' + secao.value + '":</h2>';
+          resultado.innerHTML += scrapperConverter(response.data, secao.value);
+        });
+      }
+    });
+  </script>
+</body>
+</html>
