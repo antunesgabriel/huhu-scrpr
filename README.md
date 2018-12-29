@@ -1,6 +1,10 @@
 # Scrapper para o VueJS Norte
 
-Os arquivos de código fonte estão na pasta `src`
+Os arquivos de código fonte estão na pasta `src`.
+
+Os arquivos de produção estão na pasta `dist`.
+
+Os arquivos de demonstração estão na pasta `demo`.
 
 ## Build
   Primeiramente, instale os módulos necessários com:
