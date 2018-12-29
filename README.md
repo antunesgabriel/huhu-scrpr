@@ -9,7 +9,7 @@ Os arquivos de código fonte estão na pasta `src`
   ```
   Logo após, você pode usar o `gulp mainjs` para compilar e `gulp` para ficar monitorando alterações e compilar quando o mesmo ocorrer.
 
-  *_Obs: requer o gulp-cli instalado globalmente. Instale: `(sudo?) npm install gulp-cli -g` _*
+  *_Obs: requer o gulp-cli instalado globalmente. Instale: `(sudo?) npm install gulp-cli -g`_*
 
 
 ## Instalação
