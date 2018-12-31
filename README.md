@@ -1,10 +1,21 @@
-# Scrapper para o VueJS Norte
+# HuhuScrpr
+O HuhuScrpr identifica a seção e retorna somente os seus links
 
-Os arquivos de código fonte estão na pasta `src`.
+Vamos supor que esse seja seu texto:
+```md
+## Título
+[Foo](http://bar)
+[Bar](http://foo)
 
-Os arquivos de produção estão na pasta `dist`.
+## Outro
+[Outro](http://foo)
+```
 
-Os arquivos de demonstração estão na pasta `demo`.
+E a seção selecionada sendo "## Titulo", a saída é:
+```html
+<a href="http://bar">Foo</a>
+<a href="http://foo">Bar</a>
+```
 
 ## Build
   Primeiramente, instale os módulos necessários com:
