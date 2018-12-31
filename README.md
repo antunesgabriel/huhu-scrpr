@@ -30,13 +30,13 @@ E a seção selecionada sendo "## Titulo", a saída é:
 ## Instalação
   Copie o arquivo `main.js` dentro da pasta `dist` para o seu projeto. Logo após, adicione ao arquivo que deseja usa-lo:
   ```html
-  <script src="dist/js/main.js" type="text/javascript"></script>
+  <script src="path/to/main.js" type="text/javascript"></script>
   ```
 
 ## Uso
   Com o texto em uma variável qualquer, use:
   ```javascript
-  let links = scrapperConverter(variavel, "## Título da Seção");
+  let links = scrapperConverter(seuTextoMd, "## Título da Seção");
   ```
 
   Exemplo usando uma requisição:
