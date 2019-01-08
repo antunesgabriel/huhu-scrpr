@@ -1,21 +1,8 @@
 # Markdown Scrapper
 Identifica a seção e retorna somente os seus links
 
-A seção selecionada sendo "## Titulo", e seu texto seja
-```
-## Título
-[Foo](http://bar)
-[Bar](http://foo)
-
-## Outro
-[Outro](http://foo)
-```
-
-A saída é:
-```html
-<a href="http://bar">Foo</a>
-<a href="http://foo">Bar</a>
-```
+## Como funciona?
+Veja você mesmo a demonstação [nesse link](https://antunesrodrigues.github.io/markdown-scrapper/demo/)
 
 ## Build
   Os arquivos de código-fonte estão na pasta [src](src)
