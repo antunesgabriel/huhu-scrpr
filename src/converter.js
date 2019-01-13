@@ -1,5 +1,4 @@
-let scrapperConverter;
-scrapperConverter = function(texto, textoComeco){
+const scrapperConverter = function(texto, textoComeco){
   // Remover as quebras de linha
   texto = texto.replace(/\n/g, "");
 
